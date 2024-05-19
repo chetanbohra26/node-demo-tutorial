@@ -16,7 +16,7 @@ app.use('/auth', authRouter);
 
 const data = [1, 2, 3, 4, 5, 6];
 
-app.get('/', authMiddleware, (req, res) => {
+app.get('/', (req, res) => {
 	res.json(data);
 });
 
